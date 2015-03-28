@@ -11,7 +11,7 @@ def index():
         insta = InstagramAPI(access_token=instgram_access_token)
         user_name = request.form['message']
         user_id = insta.user_id(user_name=user_name)
-        user = {'user_name':user_name, 'user_is':user_id}
+        user = {'user_name': user_name, 'user_id': user_id}
         user = insta.user_info(user=user)
 
         return render_template('index.html', title="Your gender?", method=request.method, body="Your Instagram data", userinfo=user)
