@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from settings import instgram_access_token
-from instagram_collector import InstagramAPI, Alchemy
-from alchemyapi.alchemyapi import AlchemyAPI
+from api import InstagramAPI
+
 
 app = Flask(__name__)
 

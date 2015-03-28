@@ -131,8 +131,6 @@ class AlchemyAPI:
     # The base URL for all endpoints
     BASE_URL = 'http://access.alchemyapi.com/calls'
 
-    import requests_cache
-    requests_cache.install_cache('cache_alchemy', allowable_methods=('GET', 'POST'))
     s = requests.Session()
 
     def __init__(self):

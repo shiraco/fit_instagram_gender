@@ -1,10 +1,7 @@
 from alchemyapi.alchemyapi import AlchemyAPI
 import requests
-import requests_cache
 import pandas as pd
 
-# API呼び出しの結果をsqliteにキャッシュする
-requests_cache.install_cache('cache_instagram', allowable_methods=('GET', 'POST'))
 
 URL_ROOT = "https://api.instagram.com/v1/"
 
